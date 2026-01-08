@@ -19,7 +19,10 @@ const Register = () => {
     // Later you will send this data to your backend
 
     axios
-      .post("http://localhost:5000/api/users/register", userData)
+      .post(
+        "https://mern-project-kktm.onrender.com/api/users/register",
+        userData
+      )
       .then((res) => {
         navigate("/login");
         alert("Registration successful!");
