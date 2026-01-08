@@ -18,7 +18,7 @@ const Login = () => {
       password,
     };
     axios
-      .post("http://localhost:5000/api/users/login", loginData)
+      .post("https://mern-project-kktm.onrender.com/api/users/login", loginData)
       .then((res) => {
         saveToken(res.data.token);
         navigate("/");
